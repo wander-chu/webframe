@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/webserver?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=true
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+swagger:
+  title: My Web Frame
+  desc: 基于springBoot编写的RESful-API框架
+  version: 0.0.1.SNAPSHOT
+  termsOfServiceUrl: javascript:void(0)
+  license: Apache 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html
+  basePackage: com.example.webserver.controller
+  groupName: Group Default
+  contactName: wander
+  contactUrl: https://github.com/wander-chu
+  contactEmail: 362207958@qq.com
