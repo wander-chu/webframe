@@ -15,7 +15,7 @@ public class SyncConfig {
     @Autowired
     private SyncUserTask syncUserTask;
 
-    @Scheduled(cron = "0/10 * * * * ?")
+    @Scheduled(cron = "0 0 1 * * ?")
     public void task() {
         logger.info(">>>>>>>>>>>>sync users task start");
         syncUserTask.sync();
