@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class TimeAspect {
     private static Logger logger = LoggerFactory.getLogger(TimeAspect.class);
 
-    @Around("execution(* com.example.webserver.controller.*.*(..))")
+    @Around("execution(* com.example.webserver.controller.HelloController.*(..))")
     public Object handleControllerMethod(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         logger.info("time aspect start");
         Object[] args = proceedingJoinPoint.getArgs();

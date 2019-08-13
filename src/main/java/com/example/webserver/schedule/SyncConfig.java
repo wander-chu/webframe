@@ -1,6 +1,5 @@
 package com.example.webserver.schedule;
 
-import com.example.webserver.service.UserService;
 import com.example.webserver.task.SyncUserTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
